@@ -1,0 +1,226 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body,.wrap{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.wrap{
+	background-color: black;
+}
+/*<!-- 游戏规则 -->*/
+#rule{
+	width:90%;
+	height:90%;
+	text-align: center;
+	position: relative;
+	top:5%;
+	left:5%;
+	display: block;
+}
+#rule>img:nth-of-type(1){
+	width:100%;
+	height:100%;
+}
+#rule>img:nth-of-type(2){
+	width:60px;
+	height:60px;
+	position: absolute;
+	top:0;
+	right:2%;
+	z-index:200;
+}
+/*<!-- 翻翻看 -->*/
+#crossing{
+	width:100%;
+	height:100%;
+	text-align: center;
+	position: relative;
+	display: none;
+}
+#crossing>img:nth-of-type(1){
+	width:100%;
+	height:75%;
+}
+/*第一关*/
+#first{
+	width:100%;
+	height:100%;
+	background-color:rgba(100,100,100,0.3);
+	position: relative;
+	overflow: hidden;
+	display: none;
+}
+#first>img{
+	width:80%;
+	height:40%;
+	display: block;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+/*<!-- 时间条 -->*/
+#article{
+	width:100%;
+	position: relative;
+	top:1%;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(255,255,254,1);
+}
+#article>img{
+	width:100%;
+}
+#article>div{
+	width:84%;
+	height:50%;
+	border-radius: 25px;
+	overflow: hidden;
+	position: absolute;
+	left:8.2%;
+	top:1.5%;
+}
+#article>div>p{
+	width:100%;
+	height:100%;
+	background:url(../images/countdown.png)0 0 no-repeat;
+	background-size: cover;
+	border-radius:25px;
+	position: absolute;
+	left:0;
+}
+.theTime{
+	position: absolute;
+	top:48%;
+	left:75%;
+}
+.zeon{
+	position: absolute;
+	top:8%;
+	left:2%;
+}
+.ten{
+	position:absolute;
+	top:8%;
+	left:95%;
+}
+/*关卡图片*/
+#pat{
+	width:100%;
+	height:100%;
+	background:url(../images/firstbg.jpg)0 0 no-repeat;
+	background-size: cover;
+	position: relative;
+	display: none;
+}
+/*第一关*/
+#pat>ul{
+	width:70%;
+	height:60%;
+	position: absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+#pat li{
+	position: relative;
+	display: inline-block;
+	width: 48%;
+	height: 30%;
+}
+#pat li img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	transition:0.5s;
+}
+#pat li img:nth-of-type(1){
+	transform:rotateY(0deg);
+}
+#pat li img:nth-of-type(2){
+	transform:rotateY(180deg);
+}
+.raffle{
+	color: rgba(255,255,254,1);
+	font-size:18px;
+	position:fixed;
+	bottom:0;
+}
+.raffle>span{
+	position: absolute;
+	top:35%;
+	left:20%;
+}
+/*第二关*/
+#shot>.second{
+	display: none;
+}
+/*第三关*/
+#shot>.three{
+	display: none;
+}
+/*第一关挑战失败/成功*/
+.loseFirst{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top:0 ;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 100;
+	display: none;
+}
+.loseFirst img{
+	width: 55%;
+	height: 30%;
+	position: absolute;
+	top: 0;bottom: 0;left: 0;right: 0;
+	margin: auto;
+}
+/*通关*/
+.pass{
+	background-image: url(../images/pass.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;top: 0;
+	display: none;
+	z-index: 1000;
+}
+.pass span{
+	width: 17%;
+    height: 10%;
+    border-radius: 100%;
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    top: 27%;
+    left: 41%;
+    text-align: center;
+}
+/*分享*/
+.pass p,.pass div{
+	width: 30%;
+    height: 6%;
+    position: absolute;
+}
+.pass p{
+    left: 57%;
+    top: 51%;
+}
+/*再玩一次*/
+.pass div{
+    left: 35%;
+    top: 62%;
+}
